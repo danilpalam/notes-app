@@ -1,4 +1,4 @@
-const CACHE_NAME = 'notes-cache-v3';
+const CACHE_NAME = 'notes-cache-v6';
 
 const ASSETS = [
   '/',
@@ -6,10 +6,11 @@ const ASSETS = [
   '/app.js',
   '/manifest.json',
 
+  '/icons/favicon-16x16.png',
+  '/icons/favicon-32x32.png',
   '/icons/favicon-192x192.png',
   '/icons/favicon-512x512.png'
 ];
-
 // Установка
 self.addEventListener('install', event => {
   event.waitUntil(
