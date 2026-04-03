@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  
+  <title>Заметки PWA</title>
+
+  <!-- Manifest -->
+  <link rel="manifest" href="/manifest.json">
+
+  <!-- PWA meta -->
+  <meta name="theme-color" content="#4285f4">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <!-- Иконка для iOS -->
+  <link rel="apple-touch-icon" href="icons/favicon-192x192.png">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="/css/chota.css">
+</head>
+
+<body>
+  <h1>📝 Заметки (PWA)</h1>
+
+  <form id="note-form" class="row">
+    <input class="col-9" type="text" id="note-input" placeholder="Введите заметку" required>
+    <button class="col-3" type="submit">Добавить</button>
+  </form>
+
+  <ul id="notes-list"></ul>
+
+  <script src="app.js"></script>
+</body>
+</html>
